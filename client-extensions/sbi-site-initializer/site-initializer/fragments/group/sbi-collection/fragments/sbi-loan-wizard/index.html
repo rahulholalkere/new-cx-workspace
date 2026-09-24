@@ -1,0 +1,287 @@
+<section class="sbi-wizard-wrapper" aria-label="Digital Loan Application Wizard">
+  <div class="sbi-container">
+    <div class="sbi-wizard-header">
+      <div class="sbi-wizard-badge">
+        <span class="sbi-badge-pulse"></span>
+        <span>INSTANT DIGITAL IN-PRINCIPLE SANCTION</span>
+      </div>
+      <h2 id="sbi-wizard-main-title">Digital Loan Application Portal</h2>
+      <p>Complete your 4-step paperless application and receive an instant sanction letter within 2 minutes.</p>
+    </div>
+
+    <div class="sbi-wizard-card">
+      <!-- Multi-Step Progress Tracker (Clay Multi-Step Nav pattern) -->
+      <nav class="sbi-step-nav" aria-label="Application Progress">
+        <ol class="sbi-step-list">
+          <li id="sbi-step-ind-1" class="sbi-step-item active" aria-current="step">
+            <span class="sbi-step-indicator">1</span>
+            <div class="sbi-step-label-group">
+              <span class="sbi-step-sub">STEP 1</span>
+              <span class="sbi-step-title">Loan Selection</span>
+            </div>
+          </li>
+          <li id="sbi-step-ind-2" class="sbi-step-item">
+            <span class="sbi-step-indicator">2</span>
+            <div class="sbi-step-label-group">
+              <span class="sbi-step-sub">STEP 2</span>
+              <span class="sbi-step-title">Applicant Details</span>
+            </div>
+          </li>
+          <li id="sbi-step-ind-3" class="sbi-step-item">
+            <span class="sbi-step-indicator">3</span>
+            <div class="sbi-step-label-group">
+              <span class="sbi-step-sub">STEP 3</span>
+              <span class="sbi-step-title">Financial Profile</span>
+            </div>
+          </li>
+          <li id="sbi-step-ind-4" class="sbi-step-item">
+            <span class="sbi-step-indicator">4</span>
+            <div class="sbi-step-label-group">
+              <span class="sbi-step-sub">STEP 4</span>
+              <span class="sbi-step-title">Instant Sanction</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Step Panels Container -->
+      <div class="sbi-wizard-body">
+        <!-- ================= STEP 1: Product & Amount ================= -->
+        <div id="sbi-panel-step-1" class="sbi-wizard-panel active">
+          <h3 class="sbi-panel-title">Choose Loan Product & Desired Amount</h3>
+          <p class="sbi-panel-desc">Select from our range of retail and green financing schemes.</p>
+
+          <div class="sbi-form-group">
+            <label for="sbi-wiz-product" class="sbi-form-label">Select Loan Product</label>
+            <select id="sbi-wiz-product" class="sbi-form-select">
+              <option value="SBI Regular Home Loan" data-rate="8.50" data-max="30" selected>SBI Regular Home Loan (Starting 8.50% p.a.)</option>
+              <option value="PM Surya Ghar Solar Roof-Top Loan" data-rate="7.00" data-max="10">PM Surya Ghar Solar Loan (Concessional 7.00% p.a.)</option>
+              <option value="SBI NRI Home Loan" data-rate="8.55" data-max="30">SBI NRI Home Loan (Starting 8.55% p.a.)</option>
+              <option value="SBI Express Credit Personal Loan" data-rate="10.30" data-max="7">SBI Express Credit (Starting 10.30% p.a.)</option>
+            </select>
+          </div>
+
+          <div class="sbi-form-grid-2">
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-amount" class="sbi-form-label">Required Loan Amount (₹)</label>
+              <div class="sbi-input-group">
+                <span class="sbi-addon">₹</span>
+                <input id="sbi-wiz-amount" type="number" class="sbi-form-input" value="3500000" min="100000" max="10000000" step="50000" required />
+              </div>
+              <span class="sbi-help-text">Min: ₹ 1 Lakh | Max: ₹ 1 Crore</span>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-tenure" class="sbi-form-label">Repayment Tenure (Years)</label>
+              <div class="sbi-input-group">
+                <input id="sbi-wiz-tenure" type="number" class="sbi-form-input" value="20" min="1" max="30" step="1" required />
+                <span class="sbi-addon">Yrs</span>
+              </div>
+              <span class="sbi-help-text">Up to 30 years for Home Loans</span>
+            </div>
+          </div>
+
+          <div class="sbi-live-estimate-strip">
+            <div class="sbi-est-item">
+              <span>Indicative Interest Rate:</span>
+              <strong id="sbi-wiz-rate-disp">8.50% p.a.</strong>
+            </div>
+            <div class="sbi-est-item">
+              <span>Estimated Monthly EMI:</span>
+              <strong id="sbi-wiz-emi-disp" class="sbi-highlight-val">₹ 30,374</strong>
+            </div>
+          </div>
+
+          <div class="sbi-wizard-actions">
+            <div></div>
+            <button id="sbi-btn-goto-step-2" type="button" class="sbi-btn-primary">
+              Continue to Personal Details &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 2: Personal Details ================= -->
+        <div id="sbi-panel-step-2" class="sbi-wizard-panel" hidden>
+          <h3 class="sbi-panel-title">Applicant Information</h3>
+          <p class="sbi-panel-desc">We need basic identification details to generate your KYC inquiry.</p>
+
+          <div class="sbi-form-grid-2">
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-name" class="sbi-form-label">Full Name (As per PAN)</label>
+              <input id="sbi-wiz-name" type="text" class="sbi-form-input" placeholder="e.g. Rajesh Kumar Sharma" required />
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-pan" class="sbi-form-label">Permanent Account Number (PAN)</label>
+              <input id="sbi-wiz-pan" type="text" class="sbi-form-input sbi-uppercase" placeholder="e.g. ABCDE1234F" maxlength="10" required />
+              <span class="sbi-help-text">10-character alphanumeric PAN</span>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-mobile" class="sbi-form-label">Mobile Number</label>
+              <div class="sbi-input-group">
+                <span class="sbi-addon">+91</span>
+                <input id="sbi-wiz-mobile" type="tel" class="sbi-form-input" placeholder="9876543210" maxlength="10" required />
+              </div>
+              <span class="sbi-help-text">Instant OTP will be sent for authorization</span>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-email" class="sbi-form-label">Email Address</label>
+              <input id="sbi-wiz-email" type="email" class="sbi-form-input" placeholder="rajesh.sharma@example.com" required />
+              <span class="sbi-help-text">Sanction letter copy will be sent here</span>
+            </div>
+          </div>
+
+          <div id="sbi-step2-error" class="sbi-error-box" hidden></div>
+
+          <div class="sbi-wizard-actions">
+            <button id="sbi-btn-back-step-1" type="button" class="sbi-btn-outline">
+              &larr; Back
+            </button>
+            <button id="sbi-btn-goto-step-3" type="button" class="sbi-btn-primary">
+              Continue to Financial Profile &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 3: Financial Profile ================= -->
+        <div id="sbi-panel-step-3" class="sbi-wizard-panel" hidden>
+          <h3 class="sbi-panel-title">Employment & Income Details</h3>
+          <p class="sbi-panel-desc">Accurate income details maximize your sanctioned loan eligibility.</p>
+
+          <div class="sbi-form-grid-2">
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-employment" class="sbi-form-label">Employment Type</label>
+              <select id="sbi-wiz-employment" class="sbi-form-select">
+                <option value="Salaried">Salaried (Private / Govt / PSU)</option>
+                <option value="Self-Employed Professional">Self-Employed Professional (Doctor, CA, Architect)</option>
+                <option value="Self-Employed Business">Self-Employed Business Owner / Trader</option>
+                <option value="NRI Salaried">NRI Salaried (Overseas Employment)</option>
+              </select>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-income" class="sbi-form-label">Net Monthly Take-Home Income (₹)</label>
+              <div class="sbi-input-group">
+                <span class="sbi-addon">₹</span>
+                <input id="sbi-wiz-income" type="number" class="sbi-form-input" value="95000" min="15000" step="5000" required />
+              </div>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-existing-emi" class="sbi-form-label">Current Monthly Obligations (Existing EMIs)</label>
+              <div class="sbi-input-group">
+                <span class="sbi-addon">₹</span>
+                <input id="sbi-wiz-existing-emi" type="number" class="sbi-form-input" value="0" min="0" step="1000" />
+              </div>
+            </div>
+
+            <div class="sbi-form-group">
+              <label for="sbi-wiz-city" class="sbi-form-label">Current City</label>
+              <input id="sbi-wiz-city" type="text" class="sbi-form-input" value="Mumbai" required />
+            </div>
+          </div>
+
+          <div class="sbi-declaration-box">
+            <label class="sbi-checkbox-label">
+              <input id="sbi-wiz-consent" type="checkbox" checked required />
+              <span>I authorize State Bank of India to fetch my credit bureau score (CIBIL/Equifax) and process this digital application in compliance with RBI guidelines.</span>
+            </label>
+          </div>
+
+          <div id="sbi-step3-error" class="sbi-error-box" hidden></div>
+
+          <div class="sbi-wizard-actions">
+            <button id="sbi-btn-back-step-2" type="button" class="sbi-btn-outline">
+              &larr; Back
+            </button>
+            <button id="sbi-btn-submit-sanction" type="button" class="sbi-btn-primary sbi-btn-success">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+              <span>Generate In-Principle Sanction</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- ================= STEP 4: Sanction Result ================= -->
+        <div id="sbi-panel-step-4" class="sbi-wizard-panel" hidden>
+          <div class="sbi-sanction-success-header">
+            <div class="sbi-success-circle">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="3">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h3>In-Principle Loan Sanction Approved!</h3>
+            <p>Your digital credit assessment is successful and recorded in SBI Core Systems.</p>
+          </div>
+
+          <div class="sbi-sanction-letter-card">
+            <div class="sbi-sanction-letter-top">
+              <div class="sbi-brand-mini">
+                <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
+                  <circle cx="50" cy="50" r="48" fill="#004B87" />
+                  <circle cx="50" cy="50" r="30" fill="#00B5E2" />
+                  <circle cx="50" cy="50" r="16" fill="#FFFFFF" />
+                  <rect x="44" y="50" width="12" height="36" fill="#FFFFFF" />
+                </svg>
+                <strong>State Bank of India</strong>
+              </div>
+              <div class="sbi-ref-badge">
+                <span>Application Ref ID:</span>
+                <strong id="sbi-res-ref-num">SBI-APP-2026-94812</strong>
+              </div>
+            </div>
+
+            <div class="sbi-letter-body-grid">
+              <div class="sbi-letter-cell">
+                <span>Applicant Name</span>
+                <strong id="sbi-res-name">Rajesh Kumar</strong>
+              </div>
+              <div class="sbi-letter-cell">
+                <span>Selected Scheme</span>
+                <strong id="sbi-res-product">SBI Regular Home Loan</strong>
+              </div>
+              <div class="sbi-letter-cell">
+                <span>Sanctioned Amount</span>
+                <strong id="sbi-res-sanctioned-amt" class="sbi-green-text">₹ 35,00,000</strong>
+              </div>
+              <div class="sbi-letter-cell">
+                <span>Approved Concessional Rate</span>
+                <strong id="sbi-res-rate">8.50% p.a. (EBLR)</strong>
+              </div>
+              <div class="sbi-letter-cell">
+                <span>Tenure Duration</span>
+                <strong id="sbi-res-tenure">20 Years (240 Months)</strong>
+              </div>
+              <div class="sbi-letter-cell">
+                <span>Indicative Monthly EMI</span>
+                <strong id="sbi-res-emi" class="sbi-highlight-val">₹ 30,374</strong>
+              </div>
+            </div>
+
+            <div class="sbi-sanction-notes">
+              <p><strong>Next Steps:</strong> An SBI Home Loan Relationship Manager from your nearest branch will contact you within 24 hours to schedule property verification and document pickup.</p>
+            </div>
+          </div>
+
+          <div class="sbi-wizard-actions sbi-center-actions">
+            <button id="sbi-btn-print-letter" type="button" class="sbi-btn-outline" onclick="window.print()">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              <span>Print Sanction Letter</span>
+            </button>
+            <a id="sbi-btn-back-home" href="/web/state-bank-of-india/home" class="sbi-btn-primary">
+              Return to SBI Home &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

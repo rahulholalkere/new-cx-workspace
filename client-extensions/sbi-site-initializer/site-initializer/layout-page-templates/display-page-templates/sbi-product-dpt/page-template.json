@@ -1,0 +1,7 @@
+{
+  "contentType": "com.liferay.object.model.ObjectEntry",
+  "defaultTemplate": true,
+  "description": "Standard Display Page Template for SBI Banking Products",
+  "name": "SBI Banking Product DPT",
+  "subType": "ERC_BANKING_PRODUCT"
+}

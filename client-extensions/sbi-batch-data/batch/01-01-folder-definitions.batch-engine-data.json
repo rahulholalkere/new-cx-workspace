@@ -1,0 +1,18 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectFolder",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "name": "SBIBankingModels",
+      "label": {
+        "en_US": "SBI Banking Data Models"
+      },
+      "externalReferenceCode": "FOLDER_SBI_DATA_MODELS"
+    }
+  ]
+}

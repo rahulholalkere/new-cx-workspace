@@ -1,0 +1,121 @@
+#wrapper .sbi-services-wrapper {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+  position: relative;
+}
+
+#wrapper .sbi-services-wrapper .sbi-section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+}
+
+#wrapper .sbi-services-wrapper .sbi-section-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  color: #003366;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+
+#wrapper .sbi-services-wrapper .sbi-section-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+#wrapper .sbi-services-wrapper .sbi-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 12px;
+  padding: 2.25rem 1.75rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px -2px rgba(0, 51, 102, 0.05);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #003366, #00a3e0);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 32px -8px rgba(0, 51, 102, 0.12), 0 8px 16px -4px rgba(0, 51, 102, 0.06);
+  border-color: #93c5fd;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card:hover::after {
+  opacity: 1;
+}
+
+#wrapper .sbi-services-wrapper .sbi-svc-icon-box {
+  width: 58px;
+  height: 58px;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  color: #003366;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 51, 102, 0.08);
+  transition: transform 0.3s ease;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card:hover .sbi-svc-icon-box {
+  transform: scale(1.08);
+}
+
+#wrapper .sbi-services-wrapper .sbi-icon-green {
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  color: #059669;
+}
+
+#wrapper .sbi-services-wrapper .sbi-svc-title {
+  color: #003366;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-services-wrapper .sbi-svc-desc {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+#wrapper .sbi-services-wrapper .sbi-svc-link {
+  color: #003366;
+  font-weight: 700;
+  font-size: 0.875rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-services-wrapper .sbi-service-card:hover .sbi-svc-link {
+  color: #00a3e0;
+  transform: translateX(4px);
+}

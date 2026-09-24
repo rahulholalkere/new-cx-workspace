@@ -1,0 +1,4 @@
+sbi-global-css:
+  name: "SBI Global CSS"
+  type: globalCSS
+  url: "css/main.css"

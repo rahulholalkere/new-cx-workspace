@@ -1,0 +1,416 @@
+#wrapper .sbi-wizard-wrapper {
+  padding: 4rem 0;
+  background-color: #F8FAFC;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-wizard-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-wizard-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  color: #004B87;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-badge-pulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #10B981;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-wizard-header h2 {
+  font-size: 2.25rem;
+  color: #004B87;
+  margin-bottom: 0.75rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-wizard-header p {
+  color: #64748B;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-wizard-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 75, 135, 0.08);
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Clay Multi-Step Nav Bar */
+#wrapper .sbi-wizard-wrapper .sbi-step-nav {
+  background-color: #F8FAFC;
+  border-bottom: 1px solid #E2E8F0;
+  padding: 1.5rem 2rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-item.active,
+#wrapper .sbi-wizard-wrapper .sbi-step-item.completed {
+  opacity: 1;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-indicator {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #E2E8F0;
+  color: #64748B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-item.active .sbi-step-indicator {
+  background-color: #004B87;
+  color: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(0, 75, 135, 0.15);
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-item.completed .sbi-step-indicator {
+  background-color: #10B981;
+  color: #FFFFFF;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-label-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-sub {
+  font-size: 0.7rem;
+  color: #64748B;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-step-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+/* Wizard Body */
+#wrapper .sbi-wizard-wrapper .sbi-wizard-body {
+  padding: 2.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-panel-title {
+  font-size: 1.4rem;
+  color: #004B87;
+  margin-bottom: 0.35rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-panel-desc {
+  color: #64748B;
+  font-size: 0.9375rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Controls */
+#wrapper .sbi-wizard-wrapper .sbi-form-group {
+  margin-bottom: 1.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-form-label {
+  display: block;
+  font-weight: 600;
+  color: #334155;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-form-select,
+#wrapper .sbi-wizard-wrapper .sbi-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  color: #1E293B;
+  background-color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-form-select:focus,
+#wrapper .sbi-wizard-wrapper .sbi-form-input:focus {
+  border-color: #004B87;
+  box-shadow: 0 0 0 3px rgba(0, 75, 135, 0.1);
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-input-group {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #CBD5E1;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-input-group:focus-within {
+  border-color: #004B87;
+  box-shadow: 0 0 0 3px rgba(0, 75, 135, 0.1);
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-input-group .sbi-form-input {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-addon {
+  padding: 0.75rem 1rem;
+  background-color: #F1F5F9;
+  color: #64748B;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-right: 1px solid #CBD5E1;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-input-group .sbi-addon:last-child {
+  border-right: none;
+  border-left: 1px solid #CBD5E1;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-help-text {
+  display: block;
+  font-size: 0.75rem;
+  color: #94A3B8;
+  margin-top: 0.35rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-uppercase {
+  text-transform: uppercase;
+}
+
+/* Live Estimate Strip */
+#wrapper .sbi-wizard-wrapper .sbi-live-estimate-strip {
+  display: flex;
+  justify-content: space-around;
+  background-color: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin: 2rem 0;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-est-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-est-item span {
+  font-size: 0.8125rem;
+  color: #64748B;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-est-item strong {
+  font-size: 1.25rem;
+  color: #004B87;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-highlight-val {
+  color: #004B87;
+  font-size: 1.35rem;
+}
+
+/* Declarations & Errors */
+#wrapper .sbi-wizard-wrapper .sbi-declaration-box {
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-checkbox-label {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.825rem;
+  color: #475569;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-error-box {
+  background-color: #FEF2F2;
+  border: 1px solid #F87171;
+  color: #B91C1C;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+/* Wizard Actions */
+#wrapper .sbi-wizard-wrapper .sbi-wizard-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #E2E8F0;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-btn-success {
+  background-color: #10B981;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-btn-success:hover {
+  background-color: #059669;
+}
+
+/* Step 4 Sanction Success */
+#wrapper .sbi-wizard-wrapper .sbi-sanction-success-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-success-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #ECFDF5;
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem auto;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-sanction-success-header h3 {
+  font-size: 1.6rem;
+  color: #004B87;
+  margin-bottom: 0.35rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-sanction-letter-card {
+  border: 2px dashed #004B87;
+  background-color: #FCFDFE;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-sanction-letter-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 1.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-brand-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #004B87;
+  font-size: 1.1rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-ref-badge {
+  text-align: right;
+  font-size: 0.8125rem;
+  color: #64748B;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-ref-badge strong {
+  display: block;
+  color: #004B87;
+  font-size: 0.9375rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-letter-body-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-letter-cell span {
+  display: block;
+  font-size: 0.75rem;
+  color: #64748B;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-letter-cell strong {
+  font-size: 1.1rem;
+  color: #1E293B;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-green-text {
+  color: #10B981 !important;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-sanction-notes {
+  background-color: #F8FAFC;
+  border-left: 3px solid #004B87;
+  padding: 0.85rem 1rem;
+  font-size: 0.825rem;
+  color: #475569;
+}
+
+#wrapper .sbi-wizard-wrapper .sbi-center-actions {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #wrapper .sbi-wizard-wrapper .sbi-step-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #wrapper .sbi-wizard-wrapper .sbi-form-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  #wrapper .sbi-wizard-wrapper .sbi-letter-body-grid {
+    grid-template-columns: 1fr;
+  }
+}

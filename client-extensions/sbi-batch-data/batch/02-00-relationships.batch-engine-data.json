@@ -1,0 +1,33 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectRelationship",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "deletionType": "disassociate",
+      "externalReferenceCode": "REL_PRODUCT_TO_RATES",
+      "label": {
+        "en_US": "Product Interest Rates"
+      },
+      "name": "productInterestRates",
+      "objectDefinitionExternalReferenceCode1": "ERC_BANKING_PRODUCT",
+      "objectDefinitionExternalReferenceCode2": "ERC_INTEREST_RATE",
+      "type": "oneToMany"
+    },
+    {
+      "deletionType": "disassociate",
+      "externalReferenceCode": "REL_PRODUCT_TO_APPLICATIONS",
+      "label": {
+        "en_US": "Product Loan Applications"
+      },
+      "name": "productLoanApplications",
+      "objectDefinitionExternalReferenceCode1": "ERC_BANKING_PRODUCT",
+      "objectDefinitionExternalReferenceCode2": "ERC_LOAN_APPLICATION",
+      "type": "oneToMany"
+    }
+  ]
+}

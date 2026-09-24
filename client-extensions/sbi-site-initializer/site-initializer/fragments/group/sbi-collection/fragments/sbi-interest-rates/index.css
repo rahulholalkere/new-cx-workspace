@@ -1,0 +1,213 @@
+#wrapper .sbi-rates-wrapper {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-sub-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #eff6ff;
+  color: #003366;
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2.75rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  color: #003366;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-header p {
+  color: #64748b;
+  font-size: 1rem;
+  margin: 0;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-tabs {
+  display: flex;
+  background-color: #f1f5f9;
+  padding: 4px;
+  border-radius: 10px;
+  gap: 4px;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-tab {
+  background: none;
+  border: none;
+  padding: 0.65rem 1.45rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-tab.active {
+  background-color: #003366;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.15);
+}
+
+/* Table Card Container */
+#wrapper .sbi-rates-wrapper .sbi-table-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px -2px rgba(0, 51, 102, 0.04);
+}
+
+#wrapper .sbi-rates-wrapper .sbi-table-responsive {
+  overflow-x: auto;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-table th {
+  background-color: #f8fafc;
+  color: #475569;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1.5px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-table td {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1e293b;
+  font-size: 0.9375rem;
+  vertical-align: middle;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-table tr:last-child td {
+  border-bottom: none;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-featured-row td {
+  background-color: #fffdf5;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-scheme-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-scheme-badge {
+  align-self: flex-start;
+  font-size: 0.65rem;
+  font-weight: 800;
+  background-color: #fef3c7;
+  color: #b45309;
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-badge-home {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-badge-green {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-tenure-tag {
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-benefit-tag {
+  font-size: 0.8125rem;
+  color: #059669;
+  font-weight: 600;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-badge {
+  display: inline-block;
+  padding: 0.4rem 0.85rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #003366;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-gold {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-senior {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-primary {
+  background-color: #eff6ff;
+  color: #003366;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rate-plain {
+  background: none;
+  padding: 0;
+  font-size: 1rem;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-table-cta {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-table-cta:hover {
+  color: #00a3e0;
+  text-decoration: underline;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-cta-highlight {
+  color: #0284c7;
+}
+
+#wrapper .sbi-rates-wrapper .sbi-rates-footer-strip {
+  margin-top: 1.25rem;
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.5;
+}

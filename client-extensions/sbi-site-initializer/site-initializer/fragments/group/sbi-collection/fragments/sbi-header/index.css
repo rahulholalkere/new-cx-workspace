@@ -1,0 +1,445 @@
+/* Master Typography Defaults */
+#wrapper h1,
+#wrapper h2,
+#wrapper h3,
+#wrapper h4,
+#wrapper h5,
+#wrapper h6 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+  color: #003366;
+  letter-spacing: -0.025em;
+  margin-top: 0;
+}
+
+/* Header Fragment Styling */
+#wrapper .sbi-header-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 34, 68, 0.08);
+  border-bottom: 1px solid rgba(0, 51, 102, 0.08);
+}
+
+#wrapper .sbi-header-wrapper .sbi-skip-link {
+  position: absolute;
+  top: -60px;
+  left: 1rem;
+  background: #003366;
+  color: #ffffff;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  border-radius: 4px;
+  z-index: 99999;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+
+#wrapper .sbi-header-wrapper .sbi-skip-link:focus {
+  top: 1rem;
+}
+
+/* Top Utility Bar */
+#wrapper .sbi-header-wrapper .sbi-top-bar {
+  background: linear-gradient(90deg, #001f3f 0%, #003366 100%);
+  color: #e2e8f0;
+  font-size: 0.775rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#wrapper .sbi-header-wrapper .sbi-top-bar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#wrapper .sbi-header-wrapper .sbi-ticker-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  overflow: hidden;
+}
+
+#wrapper .sbi-header-wrapper .sbi-ticker-tag {
+  background-color: #f59e0b;
+  color: #002244;
+  font-weight: 800;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+#wrapper .sbi-header-wrapper .sbi-ticker-content {
+  color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#wrapper .sbi-header-wrapper .sbi-ticker-content strong {
+  color: #ffffff;
+}
+
+#wrapper .sbi-header-wrapper .sbi-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+#wrapper .sbi-header-wrapper .sbi-helpline-quick {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #94a3b8;
+}
+
+#wrapper .sbi-header-wrapper .sbi-helpline-quick strong {
+  color: #38bdf8;
+}
+
+#wrapper .sbi-header-wrapper .sbi-lang-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-lang-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+#wrapper .sbi-header-wrapper .sbi-lang-btn.active,
+#wrapper .sbi-header-wrapper .sbi-lang-btn:hover {
+  color: #ffffff;
+}
+
+#wrapper .sbi-header-wrapper .sbi-font-resizer {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-font-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  font-size: 0.65rem;
+  padding: 1px 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#wrapper .sbi-header-wrapper .sbi-font-btn.active {
+  background: #00a3e0;
+  border-color: #00a3e0;
+  color: #ffffff;
+}
+
+/* Main Navigation Bar */
+#wrapper .sbi-header-wrapper .sbi-main-nav {
+  padding: 0.75rem 0;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+}
+
+#wrapper .sbi-header-wrapper .sbi-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#wrapper .sbi-header-wrapper .sbi-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  text-decoration: none;
+}
+
+#wrapper .sbi-header-wrapper .sbi-emblem {
+  filter: drop-shadow(0 2px 4px rgba(0, 51, 102, 0.2));
+  flex-shrink: 0;
+}
+
+#wrapper .sbi-header-wrapper .sbi-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper .sbi-header-wrapper .sbi-brand-title {
+  color: #003366;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+#wrapper .sbi-header-wrapper .sbi-brand-subtitle {
+  color: #64748b;
+  font-size: 0.725rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+#wrapper .sbi-header-wrapper .sbi-nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.35rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-nav-link {
+  display: block;
+  padding: 0.55rem 0.95rem;
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#wrapper .sbi-header-wrapper .sbi-nav-link:hover,
+#wrapper .sbi-header-wrapper .sbi-nav-item.active .sbi-nav-link {
+  color: #003366;
+  background-color: #f1f5f9;
+}
+
+#wrapper .sbi-header-wrapper .sbi-green-tag {
+  background-color: #10b981;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 3px;
+  margin-left: 2px;
+}
+
+#wrapper .sbi-header-wrapper .sbi-yono-link {
+  color: #004b87;
+  font-weight: 800;
+}
+
+/* Nav Actions */
+#wrapper .sbi-header-wrapper .sbi-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-fast-apply-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  color: #003366;
+  font-size: 0.825rem;
+  font-weight: 700;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-header-wrapper .sbi-fast-apply-btn:hover {
+  background-color: #dbeafe;
+  border-color: #93c5fd;
+  transform: translateY(-1px);
+}
+
+#wrapper .sbi-header-wrapper .sbi-pulse-indicator {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+/* Login Dropdown */
+#wrapper .sbi-header-wrapper .sbi-login-dropdown {
+  position: relative;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-btn {
+  background: linear-gradient(135deg, #003366 0%, #004b87 100%);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 51, 102, 0.2);
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-btn:hover {
+  background: linear-gradient(135deg, #002244 0%, #003366 100%);
+  transform: translateY(-1px);
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.6rem;
+  width: 310px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px -10px rgba(0, 34, 68, 0.25);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+  z-index: 1001;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-dropdown.open .sbi-login-menu {
+  display: block;
+  animation: sbiFadeDown 0.2s ease-out;
+}
+
+@keyframes sbiFadeDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-menu-header {
+  background-color: #f8fafc;
+  padding: 0.85rem 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-lock-icon {
+  font-size: 1.1rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-menu-header strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #003366;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-menu-header small {
+  color: #10b981;
+  font-size: 0.725rem;
+  font-weight: 600;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.95rem 1.25rem;
+  text-decoration: none;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.15s;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-item:hover {
+  background-color: #f8fafc;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+#wrapper .sbi-header-wrapper .sbi-bg-retail { background-color: #e0f2fe; }
+#wrapper .sbi-header-wrapper .sbi-bg-corporate { background-color: #fef3c7; }
+#wrapper .sbi-header-wrapper .sbi-bg-yono { background-color: #f3e8ff; }
+
+#wrapper .sbi-header-wrapper .sbi-login-item-text strong {
+  display: block;
+  color: #003366;
+  font-size: 0.9375rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-login-item-text span {
+  display: block;
+  color: #64748b;
+  font-size: 0.775rem;
+  margin-top: 1px;
+}
+
+/* Mobile Toggle */
+#wrapper .sbi-header-wrapper .sbi-mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#wrapper .sbi-header-wrapper .sbi-burger-bar {
+  width: 24px;
+  height: 2px;
+  background-color: #003366;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+/* Mobile Drawer */
+#wrapper .sbi-header-wrapper .sbi-mobile-drawer {
+  display: none;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  padding: 1.25rem 1.5rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-mobile-drawer.open {
+  display: block;
+}
+
+#wrapper .sbi-header-wrapper .sbi-mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+#wrapper .sbi-header-wrapper .sbi-mobile-link {
+  color: #1e293b;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+#wrapper .sbi-header-wrapper .sbi-highlight-link {
+  color: #00a3e0;
+  font-weight: 700;
+}
+
+@media (max-width: 992px) {
+  #wrapper .sbi-header-wrapper .sbi-top-bar { display: none; }
+  #wrapper .sbi-header-wrapper .sbi-nav-menu { display: none; }
+  #wrapper .sbi-header-wrapper .sbi-mobile-menu-btn { display: flex; }
+}

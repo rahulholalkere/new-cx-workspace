@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-interest-rates",
+  "name": "SBI Interest Rates Table",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "table"
+}

@@ -1,0 +1,290 @@
+#wrapper .sbi-hero-wrapper {
+  background: linear-gradient(135deg, #001a33 0%, #003366 55%, #004b87 100%);
+  color: #ffffff;
+  padding: 4.5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-ambient-glow {
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(0, 163, 224, 0.22) 0%, rgba(0, 163, 224, 0) 70%);
+  pointer-events: none;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-inner {
+  display: grid;
+  grid-template-columns: 1.25fr 0.85fr;
+  gap: 3.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 163, 224, 0.15);
+  border: 1px solid rgba(0, 163, 224, 0.4);
+  color: #7dd3fc;
+  font-size: 0.725rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #00d2ff;
+  box-shadow: 0 0 8px #00d2ff;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-title {
+  color: #ffffff;
+  font-size: clamp(2.2rem, 3.8vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-description {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 92%;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-features {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-feature-pill {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-feature-pill:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(0, 163, 224, 0.4);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-pill-stat {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #00d2ff;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-pill-label {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 3px;
+  font-weight: 500;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-btn-primary {
+  background: linear-gradient(135deg, #00a3e0 0%, #0077b6 100%);
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.85rem 1.75rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 163, 224, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 163, 224, 0.5);
+  background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff !important;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Spotlight Card */
+#wrapper .sbi-hero-wrapper .sbi-hero-card {
+  background: #ffffff;
+  color: #1e293b;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 20, 40, 0.35);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-hero-card:hover {
+  transform: translateY(-4px);
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-header {
+  background-color: #f8fafc;
+  padding: 1.5rem 1.75rem 1.25rem 1.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-tag-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-tag {
+  background-color: #003366;
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-sovereign {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #059669;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-header h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #003366;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-body {
+  padding: 1.75rem;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-rate-highlight {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-big-rate {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #003366;
+  line-height: 1;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-rate-details {
+  display: flex;
+  flex-direction: column;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-rate-label {
+  font-size: 0.8125rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-senior-rate {
+  font-size: 0.8125rem;
+  color: #059669;
+  margin-top: 3px;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-list li::before {
+  content: "✓ ";
+  color: #00a3e0;
+  font-weight: 800;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: linear-gradient(135deg, #003366 0%, #004b87 100%);
+  color: #ffffff !important;
+  padding: 0.85rem 1.25rem;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+#wrapper .sbi-hero-wrapper .sbi-card-action:hover {
+  background: linear-gradient(135deg, #002244 0%, #003366 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 51, 102, 0.25);
+}
+
+@media (max-width: 992px) {
+  #wrapper .sbi-hero-wrapper .sbi-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}

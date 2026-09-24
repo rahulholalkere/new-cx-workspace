@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.rest.dto.v1_0.ObjectEntry",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "taskItemDelegateName": "C_LoanApplication"
+    }
+  },
+  "items": [
+    {
+      "externalReferenceCode": "APP_ADITYA_VERMA",
+      "properties": {
+        "applicationRefNumber": "SBI-APP-2026-98765",
+        "applicantName": "Aditya Verma",
+        "applicantEmail": "aditya.verma@example.com",
+        "applicantMobile": "9820112233",
+        "selectedProduct": "SBI Regular Home Loan",
+        "loanAmount": 4500000,
+        "tenureYears": 25,
+        "monthlyIncome": 125000,
+        "city": "Bengaluru",
+        "panNumber": "ABCDE1234F",
+        "sanctionStatus": "In-Principle Approved",
+        "statusPicklist": "approved",
+        "productLoanApplications": {
+          "externalReferenceCode": "PROD_HOME_LOAN"
+        }
+      }
+    }
+  ]
+}

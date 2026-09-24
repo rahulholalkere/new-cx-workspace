@@ -1,0 +1,67 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.rest.dto.v1_0.ObjectEntry",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "taskItemDelegateName": "C_InterestRate"
+    }
+  },
+  "items": [
+    {
+      "externalReferenceCode": "RATE_HOME_LOAN_BASE",
+      "properties": {
+        "productTitle": "SBI Regular Home Loan",
+        "rateCategory": "Loans",
+        "tenureOrSlab": "Floating Rate (EBLR Linked)",
+        "regularRate": 8.50,
+        "seniorCitizenRate": 8.50,
+        "effectiveDate": "2026-05-01",
+        "productInterestRates": {
+          "externalReferenceCode": "PROD_HOME_LOAN"
+        }
+      }
+    },
+    {
+      "externalReferenceCode": "RATE_SURYA_GHAR_SOLAR",
+      "properties": {
+        "productTitle": "PM Surya Ghar Solar Roof-Top Loan",
+        "rateCategory": "Loans",
+        "tenureOrSlab": "Concessional Clean Energy Finance",
+        "regularRate": 7.00,
+        "seniorCitizenRate": 7.00,
+        "effectiveDate": "2026-06-01",
+        "productInterestRates": {
+          "externalReferenceCode": "PROD_SURYA_GHAR"
+        }
+      }
+    },
+    {
+      "externalReferenceCode": "RATE_AMRIT_VRISHTI_444",
+      "properties": {
+        "productTitle": "Amrit Vrishti Scheme",
+        "rateCategory": "Special Deposits",
+        "tenureOrSlab": "444 Days",
+        "regularRate": 7.25,
+        "seniorCitizenRate": 7.75,
+        "effectiveDate": "2026-07-15",
+        "productInterestRates": {
+          "externalReferenceCode": "PROD_AMRIT_VRISHTI"
+        }
+      }
+    },
+    {
+      "externalReferenceCode": "RATE_NRI_HOME_LOAN",
+      "properties": {
+        "productTitle": "SBI NRI Home Loan",
+        "rateCategory": "NRI Banking",
+        "tenureOrSlab": "Floating Rate (EBLR Linked)",
+        "regularRate": 8.55,
+        "seniorCitizenRate": 8.55,
+        "effectiveDate": "2026-05-01",
+        "productInterestRates": {
+          "externalReferenceCode": "PROD_NRI_LOAN"
+        }
+      }
+    }
+  ]
+}

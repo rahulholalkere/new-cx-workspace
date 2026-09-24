@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-loan-wizard",
+  "name": "SBI Multi-Step Loan Application Wizard",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "forms"
+}

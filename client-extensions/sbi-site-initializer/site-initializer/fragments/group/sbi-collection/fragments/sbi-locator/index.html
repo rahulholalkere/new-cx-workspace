@@ -1,0 +1,215 @@
+<section class="sbi-locator-wrapper" aria-label="Branch and ATM Locator">
+  <div class="sbi-container">
+    <div class="sbi-locator-header">
+      <div class="sbi-locator-badge">
+        <span>NATIONWIDE NETWORK</span>
+      </div>
+      <h2>Branch, ATM & e-Corner Locator</h2>
+      <p>Locate over 22,000+ branches, 62,000+ ATMs, and digital Cash Deposit Hubs across India.</p>
+    </div>
+
+    <!-- Search & Filter Bar -->
+    <div class="sbi-locator-search-card">
+      <div class="sbi-locator-search-grid">
+        <div class="sbi-search-field">
+          <label for="sbi-loc-city-select">Select City</label>
+          <select id="sbi-loc-city-select" class="sbi-loc-select">
+            <option value="ALL">All Cities</option>
+            <option value="Mumbai" selected>Mumbai</option>
+            <option value="New Delhi">New Delhi</option>
+            <option value="Bengaluru">Bengaluru</option>
+          </select>
+        </div>
+
+        <div class="sbi-search-field">
+          <label for="sbi-loc-type-select">Facility Type</label>
+          <select id="sbi-loc-type-select" class="sbi-loc-select">
+            <option value="ALL" selected>All Facilities (Branch & ATM)</option>
+            <option value="Branch">Full Service Branch</option>
+            <option value="ATM">24x7 ATM / CDM</option>
+          </select>
+        </div>
+
+        <div class="sbi-search-field sbi-search-query">
+          <label for="sbi-loc-query-input">Branch Name or Pincode</label>
+          <input id="sbi-loc-query-input" type="text" class="sbi-loc-input" placeholder="e.g. Fort, Parliament Street, 400023" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Display Grid (List + Map View) -->
+    <div class="sbi-locator-results-grid">
+      <!-- Left Column: Cards List -->
+      <div class="sbi-branch-list-column">
+        <div class="sbi-results-count-bar">
+          <span>Showing <strong id="sbi-results-count">4</strong> matching locations</span>
+        </div>
+
+        <div id="sbi-branch-cards-container" class="sbi-branch-cards-list">
+          <!-- Branch Card 1 -->
+          <article class="sbi-branch-card active" data-city="Mumbai" data-type="Branch" data-lat="18.9322" data-lng="72.8336">
+            <div class="sbi-bc-top">
+              <span class="sbi-bc-type-badge">MAIN BRANCH</span>
+              <span class="sbi-bc-code">CODE: SBIN0000300</span>
+            </div>
+            <h3 class="sbi-bc-name">SBI Mumbai Main Branch</h3>
+            <p class="sbi-bc-address">Mumbai Samachar Marg, Fort, Mumbai, Maharashtra 400023</p>
+            <div class="sbi-bc-features">
+              <span class="sbi-feat-chip">Locker Facility</span>
+              <span class="sbi-feat-chip">Forex Desk</span>
+              <span class="sbi-feat-chip">Wealth Centre</span>
+            </div>
+            <div class="sbi-bc-actions">
+              <a href="tel:02222661234" class="sbi-bc-contact">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>022-22661234</span>
+              </a>
+              <span class="sbi-bc-hours">10:00 AM - 4:00 PM</span>
+            </div>
+          </article>
+
+          <!-- Branch Card 2 -->
+          <article class="sbi-branch-card" data-city="New Delhi" data-type="Branch" data-lat="28.6258" data-lng="77.2144">
+            <div class="sbi-bc-top">
+              <span class="sbi-bc-type-badge">MAIN BRANCH</span>
+              <span class="sbi-bc-code">CODE: SBIN0000691</span>
+            </div>
+            <h3 class="sbi-bc-name">SBI New Delhi Main Branch</h3>
+            <p class="sbi-bc-address">11, Parliament Street, New Delhi 110001</p>
+            <div class="sbi-bc-features">
+              <span class="sbi-feat-chip">SME Hub</span>
+              <span class="sbi-feat-chip">Aadhaar Center</span>
+              <span class="sbi-feat-chip">Locker Desk</span>
+            </div>
+            <div class="sbi-bc-actions">
+              <a href="tel:01123374567" class="sbi-bc-contact">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>011-23374567</span>
+              </a>
+              <span class="sbi-bc-hours">10:00 AM - 4:00 PM</span>
+            </div>
+          </article>
+
+          <!-- Branch Card 3 -->
+          <article class="sbi-branch-card" data-city="Bengaluru" data-type="Branch" data-lat="12.9716" data-lng="77.5946">
+            <div class="sbi-bc-top">
+              <span class="sbi-bc-type-badge">MAIN BRANCH</span>
+              <span class="sbi-bc-code">CODE: SBIN0000813</span>
+            </div>
+            <h3 class="sbi-bc-name">SBI Bengaluru Main Branch</h3>
+            <p class="sbi-bc-address">State Bank Road, St. Marks Road, Bengaluru, Karnataka 560001</p>
+            <div class="sbi-bc-features">
+              <span class="sbi-feat-chip">Startup Hub</span>
+              <span class="sbi-feat-chip">NRI Center</span>
+              <span class="sbi-feat-chip">Forex</span>
+            </div>
+            <div class="sbi-bc-actions">
+              <a href="tel:08025943210" class="sbi-bc-contact">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>080-25943210</span>
+              </a>
+              <span class="sbi-bc-hours">10:00 AM - 4:00 PM</span>
+            </div>
+          </article>
+
+          <!-- Branch Card 4: ATM -->
+          <article class="sbi-branch-card" data-city="Mumbai" data-type="ATM" data-lat="18.9272" data-lng="72.8211">
+            <div class="sbi-bc-top">
+              <span class="sbi-bc-type-badge sbi-badge-atm">24x7 ATM / CDM</span>
+              <span class="sbi-bc-code">HUB: ATM-MUM-01</span>
+            </div>
+            <h3 class="sbi-bc-name">SBI e-Corner & ATM Hub</h3>
+            <p class="sbi-bc-address">Air India Building, Nariman Point, Mumbai 400021</p>
+            <div class="sbi-bc-features">
+              <span class="sbi-feat-chip">Cash Deposit</span>
+              <span class="sbi-feat-chip">Passbook Printing</span>
+              <span class="sbi-feat-chip">Cheque Deposit</span>
+            </div>
+            <div class="sbi-bc-actions">
+              <span class="sbi-bc-contact">Helpline: 1800 1234</span>
+              <span class="sbi-bc-hours sbi-green-status">Open 24 Hours</span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive Map Canvas View -->
+      <div class="sbi-map-canvas-column">
+        <div class="sbi-map-canvas-card">
+          <div class="sbi-map-header-bar">
+            <div class="sbi-map-status">
+              <span class="sbi-live-dot"></span>
+              <span id="sbi-map-focus-label">Focus: SBI Mumbai Main Branch</span>
+            </div>
+            <span class="sbi-map-coords" id="sbi-map-coords">18.9322° N, 72.8336° E</span>
+          </div>
+
+          <!-- Stylized Interactive Map Canvas SVG -->
+          <div class="sbi-interactive-map-area">
+            <svg class="sbi-map-svg" viewBox="0 0 600 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <pattern id="sbiGridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                  <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <!-- Base Map Grid -->
+              <rect width="600" height="450" fill="#f8fafc" />
+              <rect width="600" height="450" fill="url(#sbiGridPattern)" />
+
+              <!-- Stylized Transit & Road Arteries -->
+              <path d="M 50 400 Q 200 300 350 200 T 550 50" fill="none" stroke="#cbd5e1" stroke-width="8" stroke-linecap="round"/>
+              <path d="M 50 400 Q 200 300 350 200 T 550 50" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+              <path d="M 100 80 Q 250 150 400 250 T 500 420" fill="none" stroke="#e2e8f0" stroke-width="6"/>
+
+              <!-- Interactive Pins -->
+              <!-- Pin 1: Mumbai Main -->
+              <g id="sbi-pin-1" class="sbi-map-pin active" transform="translate(180, 220)">
+                <circle cx="0" cy="0" r="24" fill="rgba(0, 51, 102, 0.15)"/>
+                <circle cx="0" cy="0" r="14" fill="#003366"/>
+                <circle cx="0" cy="0" r="6" fill="#00d2ff"/>
+                <text x="18" y="5" font-size="12" font-weight="700" fill="#003366">Mumbai Main</text>
+              </g>
+
+              <!-- Pin 2: Nariman Point ATM -->
+              <g id="sbi-pin-2" class="sbi-map-pin" transform="translate(160, 280)">
+                <circle cx="0" cy="0" r="12" fill="#059669"/>
+                <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+                <text x="16" y="4" font-size="11" font-weight="600" fill="#059669">e-Corner ATM</text>
+              </g>
+
+              <!-- Pin 3: Delhi Main -->
+              <g id="sbi-pin-3" class="sbi-map-pin" transform="translate(380, 110)">
+                <circle cx="0" cy="0" r="12" fill="#003366"/>
+                <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+                <text x="16" y="4" font-size="11" font-weight="600" fill="#003366">New Delhi Main</text>
+              </g>
+
+              <!-- Pin 4: Bengaluru Main -->
+              <g id="sbi-pin-4" class="sbi-map-pin" transform="translate(320, 340)">
+                <circle cx="0" cy="0" r="12" fill="#003366"/>
+                <circle cx="0" cy="0" r="5" fill="#ffffff"/>
+                <text x="16" y="4" font-size="11" font-weight="600" fill="#003366">Bengaluru Main</text>
+              </g>
+            </svg>
+
+            <!-- Map Floating Information Card -->
+            <div class="sbi-map-popover-card">
+              <div class="sbi-popover-header">
+                <span id="sbi-popover-type" class="sbi-popover-pill">BRANCH</span>
+                <span id="sbi-popover-code" class="sbi-popover-code">SBIN0000300</span>
+              </div>
+              <h4 id="sbi-popover-title">SBI Mumbai Main Branch</h4>
+              <p id="sbi-popover-address">Mumbai Samachar Marg, Fort, Mumbai 400023</p>
+              <div class="sbi-popover-actions">
+                <a id="sbi-popover-dir" href="https://maps.google.com/?q=18.9322,72.8336" target="_blank" rel="noopener noreferrer" class="sbi-btn-primary sbi-btn-sm">
+                  <span>Get Directions</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

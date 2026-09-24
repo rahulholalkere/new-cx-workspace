@@ -1,0 +1,126 @@
+<section id="calculator" class="sbi-calc-wrapper" aria-label="Loan EMI Calculator">
+  <div class="sbi-container">
+    <div class="sbi-calc-header">
+      <div class="sbi-calc-sub-badge">
+        <span>INTERACTIVE FINANCIAL TOOL</span>
+      </div>
+      <h2 data-lfr-editable-id="calc-heading" data-lfr-editable-type="text">Loan EMI & Repayment Calculator</h2>
+      <p data-lfr-editable-id="calc-subheading" data-lfr-editable-type="text">
+        Simulate your monthly installments, total interest, and complete amortization schedule in real-time.
+      </p>
+      
+      <!-- Quick Presets -->
+      <div class="sbi-calc-presets">
+        <span class="sbi-preset-label">Quick Presets:</span>
+        <button type="button" class="sbi-preset-btn active" data-amt="3000000" data-rate="8.50" data-tenure="20">Home Loan (₹ 30L)</button>
+        <button type="button" class="sbi-preset-btn" data-amt="200000" data-rate="7.00" data-tenure="10">PM Surya Ghar (₹ 2L)</button>
+        <button type="button" class="sbi-preset-btn" data-amt="500000" data-rate="10.30" data-tenure="5">Personal Loan (₹ 5L)</button>
+      </div>
+    </div>
+
+    <div class="sbi-calc-card">
+      <div class="sbi-calc-controls">
+        <!-- Control 1: Amount -->
+        <div class="sbi-calc-group">
+          <div class="sbi-calc-label-row">
+            <label for="sbi-range-amount">Loan Amount (₹)</label>
+            <div class="sbi-calc-input-wrap">
+              <span class="sbi-input-prefix">₹</span>
+              <input id="sbi-val-amount" type="number" value="3000000" min="100000" max="10000000" step="50000" />
+            </div>
+          </div>
+          <input id="sbi-range-amount" type="range" class="sbi-slider" value="3000000" min="100000" max="10000000" step="50000" />
+          <div class="sbi-range-limits">
+            <span>₹ 1 Lakh</span>
+            <span>₹ 50 Lakhs</span>
+            <span>₹ 1 Crore</span>
+          </div>
+        </div>
+
+        <!-- Control 2: Rate -->
+        <div class="sbi-calc-group">
+          <div class="sbi-calc-label-row">
+            <label for="sbi-range-rate">Interest Rate (% p.a.)</label>
+            <div class="sbi-calc-input-wrap">
+              <input id="sbi-val-rate" type="number" value="8.50" min="5.0" max="15.0" step="0.05" />
+              <span class="sbi-input-suffix">%</span>
+            </div>
+          </div>
+          <input id="sbi-range-rate" type="range" class="sbi-slider" value="8.50" min="5.0" max="15.0" step="0.05" />
+          <div class="sbi-range-limits">
+            <span>5.0%</span>
+            <span>10.0%</span>
+            <span>15.0%</span>
+          </div>
+        </div>
+
+        <!-- Control 3: Tenure -->
+        <div class="sbi-calc-group">
+          <div class="sbi-calc-label-row">
+            <label for="sbi-range-tenure">Loan Tenure (Years)</label>
+            <div class="sbi-calc-input-wrap">
+              <input id="sbi-val-tenure" type="number" value="20" min="1" max="30" step="1" />
+              <span class="sbi-input-suffix">Yrs</span>
+            </div>
+          </div>
+          <input id="sbi-range-tenure" type="range" class="sbi-slider" value="20" min="1" max="30" step="1" />
+          <div class="sbi-range-limits">
+            <span>1 Year</span>
+            <span>15 Years</span>
+            <span>30 Years</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Results Display Panel -->
+      <div class="sbi-calc-results">
+        <div class="sbi-emi-spotlight">
+          <span class="sbi-emi-label">Monthly EMI Installment</span>
+          <div class="sbi-emi-amount">₹ <span id="sbi-res-emi">26,035</span></div>
+          <span class="sbi-emi-subtext">Principal & Interest components included</span>
+        </div>
+
+        <!-- Visual Stacked Bar -->
+        <div class="sbi-amort-bar-wrap" aria-label="Amortization Breakdown">
+          <div class="sbi-amort-bar">
+            <div id="sbi-bar-principal" class="sbi-bar-seg sbi-bg-p" style="width: 48%;" title="Principal Ratio"></div>
+            <div id="sbi-bar-interest" class="sbi-bar-seg sbi-bg-i" style="width: 52%;" title="Interest Ratio"></div>
+          </div>
+          <div class="sbi-amort-legend">
+            <div class="sbi-legend-item">
+              <span class="sbi-dot sbi-dot-principal"></span>
+              <span>Principal (<span id="sbi-pct-principal">48</span>%)</span>
+            </div>
+            <div class="sbi-legend-item">
+              <span class="sbi-dot sbi-dot-interest"></span>
+              <span>Interest (<span id="sbi-pct-interest">52</span>%)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="sbi-calc-breakdown">
+          <div class="sbi-breakdown-row">
+            <span class="sbi-lbl">Principal Loan Amount:</span>
+            <strong class="sbi-val">₹ <span id="sbi-res-principal">30,00,000</span></strong>
+          </div>
+          <div class="sbi-breakdown-row">
+            <span class="sbi-lbl">Total Interest Payable:</span>
+            <strong class="sbi-val sbi-val-interest">₹ <span id="sbi-res-interest">32,48,329</span></strong>
+          </div>
+          <div class="sbi-breakdown-row sbi-total-row">
+            <span class="sbi-lbl">Total Amount Payable:</span>
+            <strong class="sbi-val sbi-val-total">₹ <span id="sbi-res-total">62,48,329</span></strong>
+          </div>
+        </div>
+
+        <a id="sbi-calc-apply" href="/web/state-bank-of-india/apply-loan" class="sbi-btn-primary sbi-btn-block sbi-calc-cta-btn">
+          <span>Apply For This Loan Instantly</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

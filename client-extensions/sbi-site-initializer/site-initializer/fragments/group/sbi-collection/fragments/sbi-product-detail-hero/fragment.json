@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-product-detail-hero",
+  "name": "SBI Product Detail Hero & Specs",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "page-header"
+}

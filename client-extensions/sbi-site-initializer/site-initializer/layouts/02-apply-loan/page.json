@@ -1,0 +1,20 @@
+{
+  "friendlyURL": "/apply-loan",
+  "hidden": false,
+  "name": "Apply for Loan",
+  "name_i18n": {
+    "en_US": "Apply for Loan"
+  },
+  "permissions": [
+    {
+      "actionIds": [
+        "VIEW"
+      ],
+      "roleName": "Guest",
+      "scope": 4
+    }
+  ],
+  "private": false,
+  "system": false,
+  "type": "Content"
+}

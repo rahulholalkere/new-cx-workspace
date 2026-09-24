@@ -1,0 +1,110 @@
+:root {
+  --sbi-primary: #003366;
+  --sbi-primary-dark: #002244;
+  --sbi-primary-light: #004b87;
+  --sbi-secondary: #00a3e0;
+  --sbi-accent: #f59e0b;
+  --sbi-green: #10b981;
+  --sbi-green-dark: #047857;
+  --sbi-bg-body: #f8fafc;
+  --sbi-bg-surface: #ffffff;
+  --sbi-text-main: #0f172a;
+  --sbi-text-body: #334155;
+  --sbi-text-muted: #64748b;
+  --sbi-border: #e2e8f0;
+  --sbi-border-hover: #cbd5e1;
+  --sbi-radius-sm: 6px;
+  --sbi-radius-md: 10px;
+  --sbi-radius-lg: 16px;
+  --sbi-shadow-subtle: 0 1px 3px rgba(0, 34, 68, 0.04), 0 1px 2px rgba(0, 34, 68, 0.02);
+  --sbi-shadow-card: 0 4px 16px -2px rgba(0, 51, 102, 0.06), 0 2px 6px -1px rgba(0, 51, 102, 0.03);
+  --sbi-shadow-hover: 0 20px 32px -8px rgba(0, 51, 102, 0.12), 0 8px 16px -4px rgba(0, 51, 102, 0.06);
+  --sbi-font: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", "Helvetica Neue", Arial, sans-serif;
+  --sbi-ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Global Reset & Performance Enhancements */
+body {
+  font-family: var(--sbi-font);
+  color: var(--sbi-text-body);
+  background-color: var(--sbi-bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+  padding: 0;
+}
+
+.sbi-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Financial Numerals Alignment */
+.sbi-num,
+.sbi-rate-num,
+.sbi-big-rate,
+.sbi-emi-amount {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* Button Primitives */
+.sbi-btn-primary {
+  background: linear-gradient(135deg, #003366 0%, #004b87 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--sbi-radius-sm);
+  padding: 0.75rem 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none !important;
+  box-shadow: 0 2px 4px rgba(0, 51, 102, 0.15);
+  transition: all 0.25s var(--sbi-ease);
+}
+
+.sbi-btn-primary:hover {
+  background: linear-gradient(135deg, #002244 0%, #003366 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 51, 102, 0.25);
+}
+
+.sbi-btn-primary:active {
+  transform: translateY(0);
+}
+
+.sbi-btn-outline {
+  background-color: transparent;
+  color: var(--sbi-primary) !important;
+  border: 1.5px solid var(--sbi-primary);
+  font-weight: 600;
+  font-size: 0.9375rem;
+  border-radius: var(--sbi-radius-sm);
+  padding: 0.7rem 1.45rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  text-decoration: none !important;
+  transition: all 0.25s var(--sbi-ease);
+}
+
+.sbi-btn-outline:hover {
+  background-color: rgba(0, 51, 102, 0.05);
+  transform: translateY(-2px);
+}
+
+.sbi-btn-outline:active {
+  transform: translateY(0);
+}

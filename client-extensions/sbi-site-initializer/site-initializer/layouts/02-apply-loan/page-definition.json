@@ -1,0 +1,44 @@
+{
+  "pageElement": {
+    "pageElements": [
+      {
+        "definition": {
+          "fragment": {
+            "key": "sbi-header",
+            "siteKey": "[$GROUP_KEY$]"
+          }
+        },
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "sbi-loan-wizard",
+            "siteKey": "[$GROUP_KEY$]"
+          }
+        },
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "sbi-interest-rates",
+            "siteKey": "[$GROUP_KEY$]"
+          }
+        },
+        "type": "Fragment"
+      },
+      {
+        "definition": {
+          "fragment": {
+            "key": "sbi-footer",
+            "siteKey": "[$GROUP_KEY$]"
+          }
+        },
+        "type": "Fragment"
+      }
+    ],
+    "type": "Root"
+  },
+  "version": 1.1
+}

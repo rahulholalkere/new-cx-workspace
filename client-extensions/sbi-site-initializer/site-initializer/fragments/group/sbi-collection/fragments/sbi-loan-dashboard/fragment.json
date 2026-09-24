@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-loan-dashboard",
+  "name": "SBI Loan Applications Admin Dashboard",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "table"
+}

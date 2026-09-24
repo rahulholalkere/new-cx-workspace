@@ -1,0 +1,19 @@
+assemble:
+  - from: batch
+    into: batch
+
+sbi-batch-data:
+  name: "SBI Banking Data & Models Batch Initializer"
+  oAuthApplicationHeadlessServer: sbi-batch-oauth
+  type: batch
+
+sbi-batch-oauth:
+  .serviceAddress: localhost:8080
+  .serviceScheme: http
+  name: "SBI Batch Headless OAuth Server"
+  scopes:
+    - Liferay.Headless.Batch.Engine.everything
+    - Liferay.Object.Admin.REST.everything
+    - Liferay.Headless.Admin.List.Type.everything
+    - Liferay.Headless.Object.everything
+  type: oAuthApplicationHeadlessServer

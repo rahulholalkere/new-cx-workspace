@@ -1,0 +1,397 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "enableCategorization": true,
+      "externalReferenceCode": "ERC_BANKING_PRODUCT",
+      "label": {
+        "en_US": "Banking Product"
+      },
+      "name": "BankingProduct",
+      "pluralLabel": {
+        "en_US": "Banking Products"
+      },
+      "objectFolderExternalReferenceCode": "FOLDER_SBI_DATA_MODELS",
+      "scope": "company",
+      "status": {
+        "code": 0,
+        "label": "approved"
+      },
+      "titleObjectFieldName": "productName",
+      "objectFields": [
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Product Name" },
+          "name": "productName",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Product Code" },
+          "name": "productCode",
+          "required": false
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Category" },
+          "name": "category",
+          "required": true
+        },
+        {
+          "businessType": "Picklist",
+          "indexed": true,
+          "label": { "en_US": "Category Picklist" },
+          "listTypeDefinitionExternalReferenceCode": "PL_SBI_PRODUCT_CATEGORY",
+          "name": "categoryPicklist",
+          "required": false
+        },
+        {
+          "businessType": "LongText",
+          "indexed": false,
+          "label": { "en_US": "Short Description" },
+          "name": "shortDescription",
+          "required": false
+        },
+        {
+          "businessType": "LongText",
+          "indexed": false,
+          "label": { "en_US": "Key Features" },
+          "name": "keyFeatures",
+          "required": false
+        },
+        {
+          "businessType": "LongText",
+          "indexed": false,
+          "label": { "en_US": "Eligibility" },
+          "name": "eligibility",
+          "required": false
+        },
+        {
+          "businessType": "Text",
+          "indexed": false,
+          "label": { "en_US": "CTA URL" },
+          "name": "ctaUrl",
+          "required": false
+        },
+        {
+          "businessType": "Text",
+          "indexed": false,
+          "label": { "en_US": "CTA Label" },
+          "name": "ctaLabel",
+          "required": false
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "label": { "en_US": "Badge" },
+          "name": "badge",
+          "required": false
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Min Interest Rate" },
+          "name": "minInterestRate",
+          "required": false
+        },
+        {
+          "businessType": "Integer",
+          "indexed": true,
+          "label": { "en_US": "Max Tenure Months" },
+          "name": "maxTenureMonths",
+          "required": false
+        }
+      ]
+    },
+    {
+      "enableCategorization": true,
+      "externalReferenceCode": "ERC_INTEREST_RATE",
+      "label": {
+        "en_US": "Interest Rate"
+      },
+      "name": "InterestRate",
+      "pluralLabel": {
+        "en_US": "Interest Rates"
+      },
+      "objectFolderExternalReferenceCode": "FOLDER_SBI_DATA_MODELS",
+      "scope": "company",
+      "status": {
+        "code": 0,
+        "label": "approved"
+      },
+      "titleObjectFieldName": "productTitle",
+      "objectFields": [
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Product Title" },
+          "name": "productTitle",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Rate Category" },
+          "name": "rateCategory",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Tenure or Slab" },
+          "name": "tenureOrSlab",
+          "required": true
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Regular Rate" },
+          "name": "regularRate",
+          "required": true
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Senior Citizen Rate" },
+          "name": "seniorCitizenRate",
+          "required": false
+        },
+        {
+          "businessType": "Date",
+          "indexed": true,
+          "label": { "en_US": "Effective Date" },
+          "name": "effectiveDate",
+          "required": false
+        }
+      ]
+    },
+    {
+      "enableCategorization": true,
+      "externalReferenceCode": "ERC_BRANCH_LOCATION",
+      "label": {
+        "en_US": "Branch Location"
+      },
+      "name": "BranchLocation",
+      "pluralLabel": {
+        "en_US": "Branch Locations"
+      },
+      "objectFolderExternalReferenceCode": "FOLDER_SBI_DATA_MODELS",
+      "scope": "company",
+      "status": {
+        "code": 0,
+        "label": "approved"
+      },
+      "titleObjectFieldName": "branchName",
+      "objectFields": [
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Branch Name" },
+          "name": "branchName",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Branch Code" },
+          "name": "branchCode",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Facility Type" },
+          "name": "facilityType",
+          "required": true
+        },
+        {
+          "businessType": "Picklist",
+          "indexed": true,
+          "label": { "en_US": "Facility Picklist" },
+          "listTypeDefinitionExternalReferenceCode": "PL_SBI_FACILITY_TYPE",
+          "name": "facilityPicklist",
+          "required": false
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "City" },
+          "name": "city",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "State" },
+          "name": "state",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "label": { "en_US": "Pincode" },
+          "name": "pincode",
+          "required": false
+        },
+        {
+          "businessType": "LongText",
+          "indexed": false,
+          "label": { "en_US": "Address" },
+          "name": "address",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": false,
+          "label": { "en_US": "Contact Number" },
+          "name": "contactNumber",
+          "required": false
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Latitude" },
+          "name": "latitude",
+          "required": false
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Longitude" },
+          "name": "longitude",
+          "required": false
+        }
+      ]
+    },
+    {
+      "enableCategorization": true,
+      "externalReferenceCode": "ERC_LOAN_APPLICATION",
+      "label": {
+        "en_US": "Loan Application"
+      },
+      "name": "LoanApplication",
+      "pluralLabel": {
+        "en_US": "Loan Applications"
+      },
+      "objectFolderExternalReferenceCode": "FOLDER_SBI_DATA_MODELS",
+      "scope": "company",
+      "status": {
+        "code": 0,
+        "label": "approved"
+      },
+      "titleObjectFieldName": "applicationRefNumber",
+      "objectFields": [
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Application Ref Number" },
+          "name": "applicationRefNumber",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Applicant Name" },
+          "name": "applicantName",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "label": { "en_US": "Applicant Email" },
+          "name": "applicantEmail",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "label": { "en_US": "Applicant Mobile" },
+          "name": "applicantMobile",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "Selected Product" },
+          "name": "selectedProduct",
+          "required": true
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Loan Amount" },
+          "name": "loanAmount",
+          "required": true
+        },
+        {
+          "businessType": "Integer",
+          "indexed": true,
+          "label": { "en_US": "Tenure Years" },
+          "name": "tenureYears",
+          "required": true
+        },
+        {
+          "businessType": "Decimal",
+          "indexed": true,
+          "label": { "en_US": "Monthly Income" },
+          "name": "monthlyIncome",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "City" },
+          "name": "city",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "indexedAsKeyword": true,
+          "label": { "en_US": "PAN Number" },
+          "name": "panNumber",
+          "required": true
+        },
+        {
+          "businessType": "Text",
+          "indexed": true,
+          "label": { "en_US": "Sanction Status" },
+          "name": "sanctionStatus",
+          "required": false
+        },
+        {
+          "businessType": "Picklist",
+          "indexed": true,
+          "label": { "en_US": "Status Picklist" },
+          "listTypeDefinitionExternalReferenceCode": "PL_SBI_LOAN_STATUS",
+          "name": "statusPicklist",
+          "required": false
+        }
+      ]
+    }
+  ]
+}

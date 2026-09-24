@@ -1,0 +1,20 @@
+{
+  "friendlyURL": "/loan-dashboard",
+  "hidden": false,
+  "name": "Loan Admin Dashboard",
+  "name_i18n": {
+    "en_US": "Loan Admin Dashboard"
+  },
+  "permissions": [
+    {
+      "actionIds": [
+        "VIEW"
+      ],
+      "roleName": "Guest",
+      "scope": 4
+    }
+  ],
+  "private": false,
+  "system": false,
+  "type": "Content"
+}

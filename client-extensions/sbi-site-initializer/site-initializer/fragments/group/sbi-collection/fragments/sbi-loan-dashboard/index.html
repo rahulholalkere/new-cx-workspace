@@ -1,0 +1,105 @@
+<section class="sbi-dash-wrapper" aria-label="Loan Origination Dashboard">
+  <div class="sbi-container">
+    <div class="sbi-dash-header">
+      <div class="sbi-dash-badge">
+        <span>BRANCH CREDIT CONSOLE</span>
+      </div>
+      <h2>Digital Loan Originations & Verification</h2>
+      <p>Internal credit officer console for reviewing, verifying, and sanctioning customer loan applications submitted via the digital portal.</p>
+    </div>
+
+    <!-- Executive KPI Metric Counters -->
+    <div class="sbi-kpi-grid">
+      <div class="sbi-kpi-card">
+        <span class="sbi-kpi-label">TOTAL APPLICATIONS</span>
+        <strong id="sbi-kpi-total" class="sbi-kpi-num">1</strong>
+        <span class="sbi-kpi-trend">Live portal inquiries</span>
+      </div>
+      <div class="sbi-kpi-card sbi-kpi-green">
+        <span class="sbi-kpi-label">IN-PRINCIPLE APPROVED</span>
+        <strong id="sbi-kpi-approved" class="sbi-kpi-num">1</strong>
+        <span class="sbi-kpi-trend">Credit score qualified</span>
+      </div>
+      <div class="sbi-kpi-card sbi-kpi-amber">
+        <span class="sbi-kpi-label">UNDER VERIFICATION</span>
+        <strong id="sbi-kpi-pending" class="sbi-kpi-num">0</strong>
+        <span class="sbi-kpi-trend">Document pickup queued</span>
+      </div>
+      <div class="sbi-kpi-card sbi-kpi-blue">
+        <span class="sbi-kpi-label">TOTAL SANCTION VALUE</span>
+        <strong id="sbi-kpi-value" class="sbi-kpi-num">₹ 45.0 L</strong>
+        <span class="sbi-kpi-trend">Cumulative pipeline</span>
+      </div>
+    </div>
+
+    <!-- Filter & Search Controls Bar -->
+    <div class="sbi-dash-filter-card">
+      <div class="sbi-dash-filter-grid">
+        <div class="sbi-dash-search">
+          <label for="sbi-dash-search-input">Search Applicant or Reference ID</label>
+          <input id="sbi-dash-search-input" type="text" class="sbi-dash-input" placeholder="e.g. Aditya Verma, SBI-APP-2026-98765" />
+        </div>
+        <div class="sbi-dash-filter">
+          <label for="sbi-dash-prod-select">Filter by Scheme</label>
+          <select id="sbi-dash-prod-select" class="sbi-dash-select">
+            <option value="ALL" selected>All Schemes</option>
+            <option value="SBI Regular Home Loan">SBI Regular Home Loan</option>
+            <option value="PM Surya Ghar Solar Roof-Top Loan">PM Surya Ghar Solar Loan</option>
+            <option value="SBI NRI Home Loan">SBI NRI Home Loan</option>
+          </select>
+        </div>
+        <div class="sbi-dash-action-refresh">
+          <label>&nbsp;</label>
+          <button id="sbi-dash-btn-refresh" type="button" class="sbi-btn-primary sbi-btn-sm">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="23 4 23 10 17 10"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+            <span>Refresh API Feed</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Live Applications Table -->
+    <div class="sbi-dash-table-card">
+      <div class="sbi-table-responsive">
+        <table class="sbi-dash-table">
+          <thead>
+            <tr>
+              <th scope="col">Ref Number</th>
+              <th scope="col">Applicant Name</th>
+              <th scope="col">Loan Scheme</th>
+              <th scope="col">Requested Loan</th>
+              <th scope="col">Income (Monthly)</th>
+              <th scope="col">City</th>
+              <th scope="col">Status</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="sbi-dash-tbody">
+            <!-- Default Seeded Row (Hydrates & Updates via Liferay Object API) -->
+            <tr data-id="35705" data-product="SBI Regular Home Loan">
+              <td><span class="sbi-ref-badge-sm">SBI-APP-2026-98765</span></td>
+              <td>
+                <strong>Aditya Verma</strong>
+                <span class="sbi-contact-sub">Tel: 9820112233</span>
+              </td>
+              <td><span class="sbi-scheme-tag">SBI Regular Home Loan</span></td>
+              <td><strong class="sbi-amt">₹ 45,00,000</strong></td>
+              <td>₹ 1,25,000</td>
+              <td>Bengaluru</td>
+              <td><span class="sbi-status-pill sbi-pill-approved">In-Principle Approved</span></td>
+              <td>
+                <div class="sbi-row-actions">
+                  <button type="button" class="sbi-action-btn sbi-btn-verify" title="Mark Under KYC Verification">Verify</button>
+                  <button type="button" class="sbi-action-btn sbi-btn-disburse" title="Final Sanction Approval">Disburse</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

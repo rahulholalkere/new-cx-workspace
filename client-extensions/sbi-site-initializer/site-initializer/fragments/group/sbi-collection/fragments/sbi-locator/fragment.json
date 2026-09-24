@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-locator",
+  "name": "SBI Branch and ATM Locator",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "geolocation"
+}

@@ -1,0 +1,331 @@
+#wrapper .sbi-locator-wrapper {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-locator-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-locator-badge {
+  display: inline-block;
+  background-color: #eff6ff;
+  color: #003366;
+  font-size: 0.725rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-locator-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  color: #003366;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-locator-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Search Filter Card */
+#wrapper .sbi-locator-wrapper .sbi-locator-search-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 16px -2px rgba(0, 51, 102, 0.04);
+}
+
+#wrapper .sbi-locator-wrapper .sbi-locator-search-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  gap: 1.5rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-search-field label {
+  display: block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 0.45rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-loc-select,
+#wrapper .sbi-locator-wrapper .sbi-loc-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  color: #1e293b;
+  background-color: #ffffff;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-loc-select:focus,
+#wrapper .sbi-locator-wrapper .sbi-loc-input:focus {
+  border-color: #003366;
+  box-shadow: 0 0 0 3px rgba(0, 51, 102, 0.1);
+}
+
+/* Results Grid: Cards + Map */
+#wrapper .sbi-locator-wrapper .sbi-locator-results-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-results-count-bar {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-branch-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-height: 620px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-branch-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+#wrapper .sbi-locator-wrapper .sbi-branch-card:hover,
+#wrapper .sbi-locator-wrapper .sbi-branch-card.active {
+  border-color: #00a3e0;
+  box-shadow: 0 10px 24px -4px rgba(0, 51, 102, 0.1);
+  transform: translateY(-2px);
+}
+
+#wrapper .sbi-locator-wrapper .sbi-branch-card.active {
+  border-left: 4px solid #003366;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.65rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-type-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #003366;
+  background-color: #eff6ff;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-badge-atm {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-code {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-name {
+  color: #003366;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-address {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-features {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-feat-chip {
+  background-color: #f1f5f9;
+  color: #475569;
+  font-size: 0.725rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f1f5f9;
+  font-size: 0.8125rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-contact {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-bc-hours {
+  color: #64748b;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-green-status {
+  color: #059669;
+  font-weight: 700;
+}
+
+/* Map Column */
+#wrapper .sbi-locator-wrapper .sbi-map-canvas-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 51, 102, 0.06);
+  position: sticky;
+  top: 90px;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-header-bar {
+  background-color: #002244;
+  color: #ffffff;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #10b981;
+  box-shadow: 0 0 6px #10b981;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-coords {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-interactive-map-area {
+  position: relative;
+  height: 520px;
+  background-color: #f8fafc;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-pin {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-pin:hover {
+  transform: scale(1.15);
+}
+
+/* Floating Map Popover Card */
+#wrapper .sbi-locator-wrapper .sbi-map-popover-card {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+#wrapper .sbi-locator-wrapper .sbi-popover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-popover-pill {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #003366;
+  background-color: #e0f2fe;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-popover-code {
+  font-size: 0.725rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-popover-card h4 {
+  font-size: 1.05rem;
+  color: #003366;
+  margin: 0 0 0.25rem 0;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-map-popover-card p {
+  font-size: 0.8125rem;
+  color: #64748b;
+  margin: 0 0 0.85rem 0;
+  line-height: 1.4;
+}
+
+#wrapper .sbi-locator-wrapper .sbi-btn-sm {
+  padding: 0.45rem 1rem;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 900px) {
+  #wrapper .sbi-locator-wrapper .sbi-locator-search-grid { grid-template-columns: 1fr; }
+  #wrapper .sbi-locator-wrapper .sbi-locator-results-grid { grid-template-columns: 1fr; }
+  #wrapper .sbi-locator-wrapper .sbi-map-canvas-card { position: static; }
+}

@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-footer",
+  "name": "SBI Footer",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "footer"
+}

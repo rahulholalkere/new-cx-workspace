@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-hero",
+  "name": "SBI Hero Banner",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "page-header"
+}

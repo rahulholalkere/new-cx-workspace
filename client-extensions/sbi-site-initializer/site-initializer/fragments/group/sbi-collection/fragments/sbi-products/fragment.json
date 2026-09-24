@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-products",
+  "name": "SBI Featured Products",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "cards"
+}

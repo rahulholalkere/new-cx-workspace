@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-calculator",
+  "name": "SBI Loan EMI Calculator",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "calculator"
+}

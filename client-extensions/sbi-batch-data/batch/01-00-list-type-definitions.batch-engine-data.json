@@ -1,0 +1,159 @@
+{
+  "configuration": {
+    "className": "com.liferay.headless.admin.list.type.dto.v1_0.ListTypeDefinition",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "externalReferenceCode": "PL_SBI_PRODUCT_CATEGORY",
+      "name": "SBI Product Category",
+      "name_i18n": {
+        "en_US": "SBI Product Category"
+      },
+      "listTypeEntries": [
+        {
+          "externalReferenceCode": "CAT_RETAIL_LOANS",
+          "key": "loans",
+          "name": "Retail Loans",
+          "name_i18n": { "en_US": "Retail Loans" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "CAT_DEPOSITS",
+          "key": "deposits",
+          "name": "Term & Savings Deposits",
+          "name_i18n": { "en_US": "Term & Savings Deposits" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "CAT_GREEN_ESG",
+          "key": "green",
+          "name": "SBI Green ESG",
+          "name_i18n": { "en_US": "SBI Green ESG" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "CAT_NRI_SERVICES",
+          "key": "nri",
+          "name": "NRI Banking Services",
+          "name_i18n": { "en_US": "NRI Banking Services" },
+          "type": ""
+        }
+      ]
+    },
+    {
+      "externalReferenceCode": "PL_SBI_LOAN_STATUS",
+      "name": "SBI Loan Application Status",
+      "name_i18n": {
+        "en_US": "SBI Loan Application Status"
+      },
+      "listTypeEntries": [
+        {
+          "externalReferenceCode": "STATUS_SUBMITTED",
+          "key": "submitted",
+          "name": "Application Submitted",
+          "name_i18n": { "en_US": "Application Submitted" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "STATUS_IN_PRINCIPLE_APPROVED",
+          "key": "approved",
+          "name": "In-Principle Approved",
+          "name_i18n": { "en_US": "In-Principle Approved" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "STATUS_VERIFICATION_PENDING",
+          "key": "verification",
+          "name": "Under Field Verification",
+          "name_i18n": { "en_US": "Under Field Verification" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "STATUS_DISBURSED",
+          "key": "disbursed",
+          "name": "Sanctioned & Disbursed",
+          "name_i18n": { "en_US": "Sanctioned & Disbursed" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "STATUS_REJECTED",
+          "key": "rejected",
+          "name": "Rejected",
+          "name_i18n": { "en_US": "Rejected" },
+          "type": ""
+        }
+      ]
+    },
+    {
+      "externalReferenceCode": "PL_SBI_FACILITY_TYPE",
+      "name": "SBI Facility Type",
+      "name_i18n": {
+        "en_US": "SBI Facility Type"
+      },
+      "listTypeEntries": [
+        {
+          "externalReferenceCode": "FAC_BRANCH",
+          "key": "branch",
+          "name": "Full Service Branch",
+          "name_i18n": { "en_US": "Full Service Branch" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "FAC_ATM",
+          "key": "atm",
+          "name": "24x7 ATM / CDM Hub",
+          "name_i18n": { "en_US": "24x7 ATM / CDM Hub" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "FAC_ECORNER",
+          "key": "ecorner",
+          "name": "Digital e-Corner",
+          "name_i18n": { "en_US": "Digital e-Corner" },
+          "type": ""
+        }
+      ]
+    },
+    {
+      "externalReferenceCode": "PL_SBI_EMPLOYMENT_TYPE",
+      "name": "SBI Employment Type",
+      "name_i18n": {
+        "en_US": "SBI Employment Type"
+      },
+      "listTypeEntries": [
+        {
+          "externalReferenceCode": "EMP_SALARIED",
+          "key": "salaried",
+          "name": "Salaried Professional",
+          "name_i18n": { "en_US": "Salaried Professional" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "EMP_SELF_EMPLOYED_PROF",
+          "key": "self_employed_prof",
+          "name": "Self-Employed Professional",
+          "name_i18n": { "en_US": "Self-Employed Professional" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "EMP_BUSINESS",
+          "key": "business",
+          "name": "Business Owner",
+          "name_i18n": { "en_US": "Business Owner" },
+          "type": ""
+        },
+        {
+          "externalReferenceCode": "EMP_NRI",
+          "key": "nri_salaried",
+          "name": "NRI Overseas Salaried",
+          "name_i18n": { "en_US": "NRI Overseas Salaried" },
+          "type": ""
+        }
+      ]
+    }
+  ]
+}

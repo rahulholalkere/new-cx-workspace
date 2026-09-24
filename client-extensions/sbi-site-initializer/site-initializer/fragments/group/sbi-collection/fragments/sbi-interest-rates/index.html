@@ -1,0 +1,172 @@
+<section id="rates" class="sbi-rates-wrapper" aria-label="Interest Rates">
+  <div class="sbi-container">
+    <div class="sbi-rates-header">
+      <div>
+        <div class="sbi-rates-sub-badge">
+          <svg class="sbi-cal-svg" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>REVISED INTEREST RATES • EFFECTIVE SEPTEMBER 2026</span>
+        </div>
+        <h2 data-lfr-editable-id="rates-heading" data-lfr-editable-type="text">Current Benchmark Rates</h2>
+        <p data-lfr-editable-id="rates-subheading" data-lfr-editable-type="text">
+          Transparent, market-leading interest rates on Term Deposits, Savings Accounts, and Retail Loans.
+        </p>
+      </div>
+      <div class="sbi-rate-tabs" role="tablist">
+        <button id="sbi-tab-deposits" class="sbi-rate-tab active" type="button" role="tab" aria-selected="true" aria-controls="sbi-panel-deposits">
+          <span>Deposit Schemes</span>
+        </button>
+        <button id="sbi-tab-loans" class="sbi-rate-tab" type="button" role="tab" aria-selected="false" aria-controls="sbi-panel-loans">
+          <span>Lending Rates (EBLR)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Deposits Table Panel -->
+    <div id="sbi-panel-deposits" class="sbi-rate-panel active" role="tabpanel" aria-labelledby="sbi-tab-deposits">
+      <div class="sbi-table-card">
+        <div class="sbi-table-responsive">
+          <table class="sbi-rates-table">
+            <thead>
+              <tr>
+                <th scope="col">Deposit Scheme / Tenure Slab</th>
+                <th scope="col">General Public (% p.a.)</th>
+                <th scope="col">Senior Citizens (% p.a.)</th>
+                <th scope="col">Special Benefits</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="sbi-deposits-tbody">
+              <!-- High Yield Flagship Scheme -->
+              <tr class="sbi-featured-row">
+                <td>
+                  <div class="sbi-scheme-title-wrap">
+                    <span class="sbi-scheme-badge">HIGH YIELD</span>
+                    <strong>Amrit Vrishti (444 Days)</strong>
+                    <span class="sbi-tenure-tag">Fixed Tenure Special Scheme</span>
+                  </div>
+                </td>
+                <td><span class="sbi-rate-badge sbi-rate-gold">7.25%</span></td>
+                <td><span class="sbi-rate-badge sbi-rate-senior">7.75%</span></td>
+                <td><span class="sbi-benefit-tag">Premature Liquidity Available</span></td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Invest &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Domestic Term Deposits</strong>
+                  <span class="sbi-tenure-tag">1 Year to &lt; 2 Years</span>
+                </td>
+                <td><span class="sbi-rate-badge">6.80%</span></td>
+                <td><span class="sbi-rate-badge sbi-rate-senior">7.30%</span></td>
+                <td>Monthly / Quarterly compounding</td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Invest &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Domestic Term Deposits</strong>
+                  <span class="sbi-tenure-tag">2 Years to &lt; 3 Years</span>
+                </td>
+                <td><span class="sbi-rate-badge">7.00%</span></td>
+                <td><span class="sbi-rate-badge sbi-rate-senior">7.50%</span></td>
+                <td>Overdraft loan up to 90%</td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Invest &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Short-Term Deposits</strong>
+                  <span class="sbi-tenure-tag">7 Days to 45 Days</span>
+                </td>
+                <td><span class="sbi-rate-badge">3.50%</span></td>
+                <td><span class="sbi-rate-badge sbi-rate-senior">4.00%</span></td>
+                <td>Short horizon liquidity</td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Invest &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Savings Bank Account</strong>
+                  <span class="sbi-tenure-tag">Daily balance up to Rs. 10 Crore</span>
+                </td>
+                <td><span class="sbi-rate-badge sbi-rate-plain">2.70%</span></td>
+                <td><span class="sbi-rate-badge sbi-rate-plain">2.70%</span></td>
+                <td>MODS auto-sweep enabled</td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Open Account &rarr;</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sbi-rates-footer-strip">
+        <span>* Senior Citizen concession (+0.50%) applicable for resident individuals aged 60 years and above. All interest rates subject to change without prior notice.</span>
+      </div>
+    </div>
+
+    <!-- Loans Table Panel -->
+    <div id="sbi-panel-loans" class="sbi-rate-panel" role="tabpanel" aria-labelledby="sbi-tab-loans" hidden>
+      <div class="sbi-table-card">
+        <div class="sbi-table-responsive">
+          <table class="sbi-rates-table">
+            <thead>
+              <tr>
+                <th scope="col">Loan Category</th>
+                <th scope="col">Benchmark Basis</th>
+                <th scope="col">Starting Rate (% p.a.)</th>
+                <th scope="col">Maximum Tenure</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="sbi-loans-tbody">
+              <tr class="sbi-featured-row">
+                <td>
+                  <div class="sbi-scheme-title-wrap">
+                    <span class="sbi-scheme-badge sbi-badge-home">PREFERRED</span>
+                    <strong>SBI Regular Home Loan</strong>
+                    <span class="sbi-tenure-tag">India's #1 Home Financing Solution</span>
+                  </div>
+                </td>
+                <td>EBLR Linked (Repo + 2.00%)</td>
+                <td><span class="sbi-rate-badge sbi-rate-primary">8.50%</span></td>
+                <td>30 Years</td>
+                <td><a href="/web/state-bank-of-india/apply-loan?product=SBI+Regular+Home+Loan" class="sbi-table-cta sbi-cta-highlight">Apply Online &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="sbi-scheme-title-wrap">
+                    <span class="sbi-scheme-badge sbi-badge-green">GREEN ESG</span>
+                    <strong>PM Surya Ghar Solar Rooftop Loan</strong>
+                    <span class="sbi-tenure-tag">Government Subsidized Clean Energy Scheme</span>
+                  </div>
+                </td>
+                <td>Special Concession Scheme</td>
+                <td><span class="sbi-rate-badge sbi-rate-senior">7.00%</span></td>
+                <td>10 Years</td>
+                <td><a href="/web/state-bank-of-india/apply-loan?product=PM+Surya+Ghar+Solar+Roof-Top+Loan" class="sbi-table-cta sbi-cta-highlight">Apply Online &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>SBI NRI Home Loan</strong>
+                  <span class="sbi-tenure-tag">Customized for Non-Resident Indians & PIOs</span>
+                </td>
+                <td>External Benchmark (EBLR)</td>
+                <td><span class="sbi-rate-badge sbi-rate-primary">8.55%</span></td>
+                <td>30 Years</td>
+                <td><a href="/web/state-bank-of-india/apply-loan?product=SBI+NRI+Home+Loan" class="sbi-table-cta">Apply Online &rarr;</a></td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>SBI Express Credit Personal Loan</strong>
+                  <span class="sbi-tenure-tag">Instant digital disbursement for salaried employees</span>
+                </td>
+                <td>2-Year MCLR Linked</td>
+                <td><span class="sbi-rate-badge">10.30%</span></td>
+                <td>7 Years</td>
+                <td><a href="/web/state-bank-of-india/apply-loan" class="sbi-table-cta">Apply Online &rarr;</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="sbi-rates-footer-strip">
+        <span>* Interest rates linked to RBI Repo Rate External Benchmark. Women borrowers get additional 0.05% interest concession on Home Loans.</span>
+      </div>
+    </div>
+  </div>
+</section>

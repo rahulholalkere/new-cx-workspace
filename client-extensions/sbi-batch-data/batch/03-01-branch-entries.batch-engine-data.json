@@ -1,0 +1,75 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.rest.dto.v1_0.ObjectEntry",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "taskItemDelegateName": "C_BranchLocation"
+    }
+  },
+  "items": [
+    {
+      "externalReferenceCode": "LOC_MUMBAI_MAIN",
+      "properties": {
+        "branchName": "SBI Mumbai Main Branch",
+        "branchCode": "SBIN0000300",
+        "facilityType": "Branch",
+        "facilityPicklist": "branch",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400023",
+        "address": "Mumbai Samachar Marg, Fort, Mumbai, Maharashtra 400023",
+        "contactNumber": "022-22661234",
+        "latitude": 18.9322,
+        "longitude": 72.8336
+      }
+    },
+    {
+      "externalReferenceCode": "LOC_DELHI_MAIN",
+      "properties": {
+        "branchName": "SBI New Delhi Main Branch",
+        "branchCode": "SBIN0000691",
+        "facilityType": "Branch",
+        "facilityPicklist": "branch",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110001",
+        "address": "11, Parliament Street, New Delhi 110001",
+        "contactNumber": "011-23374567",
+        "latitude": 28.6258,
+        "longitude": 77.2144
+      }
+    },
+    {
+      "externalReferenceCode": "LOC_BLR_MAIN",
+      "properties": {
+        "branchName": "SBI Bengaluru Main Branch",
+        "branchCode": "SBIN0000813",
+        "facilityType": "Branch",
+        "facilityPicklist": "branch",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "pincode": "560001",
+        "address": "State Bank Road, St. Marks Road, Bengaluru, Karnataka 560001",
+        "contactNumber": "080-25943210",
+        "latitude": 12.9716,
+        "longitude": 77.5946
+      }
+    },
+    {
+      "externalReferenceCode": "LOC_MUM_ATM",
+      "properties": {
+        "branchName": "SBI e-Corner & ATM Hub",
+        "branchCode": "ATM-MUM-01",
+        "facilityType": "ATM",
+        "facilityPicklist": "atm",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400021",
+        "address": "Air India Building, Nariman Point, Mumbai 400021",
+        "contactNumber": "1800 1234",
+        "latitude": 18.9272,
+        "longitude": 72.8211
+      }
+    }
+  ]
+}

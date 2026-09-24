@@ -1,0 +1,217 @@
+#wrapper .sbi-products-wrapper {
+  padding: 5rem 0;
+  background-color: #f8fafc;
+}
+
+#wrapper .sbi-products-wrapper .sbi-products-sub-badge {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.725rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-products-header h2 {
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  color: #003366;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-products-header p {
+  color: #64748b;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+#wrapper .sbi-products-wrapper .sbi-link-arrow {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.9375rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.2s;
+}
+
+#wrapper .sbi-products-wrapper .sbi-link-arrow:hover {
+  color: #00a3e0;
+  transform: translateX(4px);
+}
+
+#wrapper .sbi-products-wrapper .sbi-products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 1.75rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 14px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px -2px rgba(0, 51, 102, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+#wrapper .sbi-products-wrapper .sbi-border-blue::before { background: linear-gradient(90deg, #003366, #00a3e0); }
+#wrapper .sbi-products-wrapper .sbi-border-amber::before { background: linear-gradient(90deg, #f59e0b, #d97706); }
+#wrapper .sbi-products-wrapper .sbi-border-green::before { background: linear-gradient(90deg, #10b981, #059669); }
+#wrapper .sbi-products-wrapper .sbi-border-cyan::before { background: linear-gradient(90deg, #0284c7, #38bdf8); }
+
+#wrapper .sbi-products-wrapper .sbi-product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 32px -8px rgba(0, 51, 102, 0.12), 0 8px 16px -4px rgba(0, 51, 102, 0.06);
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-category-pill {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #003366;
+  background-color: #eff6ff;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+#wrapper .sbi-products-wrapper .sbi-cat-green {
+  background-color: #ecfdf5;
+  color: #047857;
+}
+
+#wrapper .sbi-products-wrapper .sbi-badge-pill {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #ffffff;
+  background-color: #003366;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+}
+
+#wrapper .sbi-products-wrapper .sbi-badge-orange { background-color: #d97706; }
+#wrapper .sbi-products-wrapper .sbi-badge-green { background-color: #059669; }
+
+#wrapper .sbi-products-wrapper .sbi-product-name {
+  color: #003366;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.65rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-desc {
+  color: #64748b;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-rate-box {
+  background-color: #f8fafc;
+  border-left: 3px solid #00a3e0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+#wrapper .sbi-products-wrapper .sbi-rate-title {
+  display: block;
+  font-size: 0.725rem;
+  color: #64748b;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#wrapper .sbi-products-wrapper .sbi-rate-num {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #003366;
+  font-variant-numeric: tabular-nums;
+}
+
+#wrapper .sbi-products-wrapper .sbi-rate-num small {
+  font-size: 0.775rem;
+  font-weight: 500;
+  color: #64748b;
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.825rem;
+  color: #475569;
+  flex-grow: 1;
+}
+
+#wrapper .sbi-products-wrapper .sbi-product-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+#wrapper .sbi-products-wrapper .sbi-check-icon {
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+#wrapper .sbi-products-wrapper .sbi-btn-block {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#wrapper .sbi-products-wrapper .sbi-detail-sublink {
+  display: block;
+  text-align: center;
+  color: #003366;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0.75rem;
+  transition: color 0.15s;
+}
+
+#wrapper .sbi-products-wrapper .sbi-detail-sublink:hover {
+  color: #00a3e0;
+  text-decoration: underline;
+}

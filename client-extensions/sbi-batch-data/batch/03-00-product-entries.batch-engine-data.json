@@ -1,0 +1,79 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.rest.dto.v1_0.ObjectEntry",
+    "parameters": {
+      "createStrategy": "UPSERT",
+      "taskItemDelegateName": "C_BankingProduct"
+    }
+  },
+  "items": [
+    {
+      "externalReferenceCode": "PROD_HOME_LOAN",
+      "properties": {
+        "productName": "SBI Regular Home Loan",
+        "productCode": "HL-001",
+        "category": "Loans",
+        "categoryPicklist": "loans",
+        "shortDescription": "India's most preferred home financing solution with lowest rates and zero hidden charges.",
+        "keyFeatures": "Interest concession for women, up to 90% property cost financing, overdraft Maxgain facility.",
+        "eligibility": "Resident Indian aged 18 to 70 with steady income.",
+        "badge": "Popular",
+        "minInterestRate": 8.50,
+        "maxTenureMonths": 360,
+        "ctaUrl": "/web/state-bank-of-india/apply-loan?product=SBI+Regular+Home+Loan",
+        "ctaLabel": "Apply Now"
+      }
+    },
+    {
+      "externalReferenceCode": "PROD_SURYA_GHAR",
+      "properties": {
+        "productName": "PM Surya Ghar Solar Roof-Top Loan",
+        "productCode": "GL-003",
+        "category": "SBI Green",
+        "categoryPicklist": "green",
+        "shortDescription": "Concessional solar rooftop financing under PM Surya Ghar Muft Bijli Yojana.",
+        "keyFeatures": "Direct MNRE subsidy, zero collateral, repayment up to 10 years.",
+        "eligibility": "Residential consumers owning individual houses/apartments.",
+        "badge": "Green Initiative",
+        "minInterestRate": 7.00,
+        "maxTenureMonths": 120,
+        "ctaUrl": "/web/state-bank-of-india/apply-loan?product=PM+Surya+Ghar+Solar+Roof-Top+Loan",
+        "ctaLabel": "Apply for Solar"
+      }
+    },
+    {
+      "externalReferenceCode": "PROD_AMRIT_VRISHTI",
+      "properties": {
+        "productName": "Amrit Vrishti Term Deposit Scheme",
+        "productCode": "TD-004",
+        "category": "Deposits",
+        "categoryPicklist": "deposits",
+        "shortDescription": "High-yield term deposit scheme offering attractive returns for a fixed tenure of 444 days.",
+        "keyFeatures": "7.25% p.a. for General Public, 7.75% p.a. for Senior Citizens.",
+        "eligibility": "Resident individuals, single or joint accounts.",
+        "badge": "High Yield",
+        "minInterestRate": 7.25,
+        "maxTenureMonths": 15,
+        "ctaUrl": "/web/state-bank-of-india/apply-loan",
+        "ctaLabel": "Invest Now"
+      }
+    },
+    {
+      "externalReferenceCode": "PROD_NRI_LOAN",
+      "properties": {
+        "productName": "SBI NRI Home Loan",
+        "productCode": "NRI-005",
+        "category": "NRI Banking",
+        "categoryPicklist": "nri",
+        "shortDescription": "Tailored housing loans for Non-Resident Indians and PIOs purchasing real estate in India.",
+        "keyFeatures": "Digital sanction via YONO Global, low processing charges, NRE/NRO remittance repayment.",
+        "eligibility": "NRIs/PIOs with minimum 2 years continuous employment abroad.",
+        "badge": "NRI Special",
+        "minInterestRate": 8.55,
+        "maxTenureMonths": 360,
+        "ctaUrl": "/web/state-bank-of-india/apply-loan?product=SBI+NRI+Home+Loan",
+        "ctaLabel": "Explore NRI Loan"
+      }
+    }
+  ]
+}

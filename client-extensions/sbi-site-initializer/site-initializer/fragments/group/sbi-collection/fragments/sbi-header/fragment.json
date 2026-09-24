@@ -1,0 +1,9 @@
+{
+  "fragmentEntryKey": "sbi-header",
+  "name": "SBI Header",
+  "type": "component",
+  "htmlPath": "index.html",
+  "cssPath": "index.css",
+  "jsPath": "index.js",
+  "icon": "header"
+}
