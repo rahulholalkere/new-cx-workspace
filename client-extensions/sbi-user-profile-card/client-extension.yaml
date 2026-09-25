@@ -1,0 +1,17 @@
+assemble:
+  - from: .
+    into: static
+
+sbi-user-profile-card:
+  name: SBI User Profile Card
+  type: customElement
+  htmlElementName: sbi-user-profile-card
+  friendlyURLMapping: sbi-user-profile-card
+  portletCategoryName: category.client-extensions
+  instanceable: false
+  cssURLs:
+    - index.css
+  urls:
+    - index.js
+  properties:
+    card-title: User Information

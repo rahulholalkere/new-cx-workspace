@@ -1,0 +1,34 @@
+sbi-account-email-configuration:
+  invitationEmailBody:
+    en_US: |
+      <p>
+          [$INVITE_SENDER_NAME$] has invited you to join [$INVITE_ACCOUNT_NAME$].  
+      </p>
+
+      <p>
+          Follow the link below to accept the invitation and set up your account.<br/>
+          <a href="[$CREATE_ACCOUNT_URL$]">Create Account</a>
+          <br/>
+          <font size="-2">The link will expire after 3 days.</font>
+      </p>
+  invitationEmailSubject:
+    en_US: "[$INVITE_SENDER_NAME$] has invited you to join [$INVITE_ACCOUNT_NAME$]"
+  invitationTokenExpirationTime: 72
+  name: SBI Account Email Configuration Setting
+  pid: com.liferay.account.configuration.AccountEntryEmailConfiguration
+  type: instanceSettings
+
+sbi-redirect-url-configuration:
+  allowedDomains:
+    - localhost
+    - "*.sbi.com"
+  name: SBI Redirect URL Configuration Setting
+  pid: com.liferay.redirect.internal.configuration.RedirectURLConfiguration
+  securityMode: domain
+  type: instanceSettings
+
+sbi-accessibility-menu-configuration:
+  enableAccessibilityMenu: true
+  name: SBI Accessibility Menu Configuration Setting
+  pid: com.liferay.accessibility.menu.web.internal.configuration.AccessibilityMenuConfiguration
+  type: instanceSettings

@@ -1,0 +1,15 @@
+assemble:
+  - from: build/static
+    into: static
+
+sbi-react-extension:
+  name: SBI React Client Extension
+  type: customElement
+  htmlElementName: sbi-react-extension
+  friendlyURLMapping: sbi-react-extension
+  portletCategoryName: category.client-extensions
+  instanceable: true
+  urls:
+    - main.js
+  properties:
+    card-title: React Extension Header

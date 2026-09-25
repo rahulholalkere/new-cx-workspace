@@ -1,0 +1,15 @@
+## Assemble Block
+assemble:
+  - from: .
+    into: static
+    
+## Custom Element Definition
+sbi-first-custom-element:
+  name: SBI First Custom Element
+  type: customElement
+  htmlElementName: sbi-first-custom-element
+  friendlyURLMapping: sbi-first-custom-element
+  portletCategoryName: category.client-extensions
+  instanceable: false
+  urls:
+    - index.js

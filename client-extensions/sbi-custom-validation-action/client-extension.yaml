@@ -1,0 +1,17 @@
+sbi-custom-spring-boot-object-validation-rule-one:
+  allowedObjectDefinitionNames:
+    - C_SBIEmployee
+  name: SBI Custom Spring Boot Object Validation Rule One
+  oAuth2ApplicationExternalReferenceCode: sbi-custom-etc-spring-boot-oaua
+  resourcePath: /object/validation/rule/one
+  type: objectValidationRule
+
+
+sbi-custom-etc-spring-boot-oaua:
+    .serviceAddress: localhost:58081
+    .serviceScheme: http
+    name: SBI Custom Spring Boot OAuth Application User Agent
+    scopes:
+        -   Liferay.Headless.Admin.User.everything
+        -   Liferay.Headless.Admin.Workflow.everything
+    type: oAuthApplicationUserAgent

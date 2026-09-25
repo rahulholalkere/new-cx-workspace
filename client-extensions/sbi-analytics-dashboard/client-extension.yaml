@@ -1,0 +1,15 @@
+assemble:
+  - from: build/static
+    into: static
+
+sbi-analytics-dashboard:
+  name: SBI Analytics Dashboard
+  type: customElement
+  htmlElementName: sbi-analytics-dashboard
+  friendlyURLMapping: sbi-analytics-dashboard
+  portletCategoryName: category.client-extensions
+  instanceable: true
+  urls:
+    - main.js
+  properties:
+    dashboard-title: Real-Time Performance
